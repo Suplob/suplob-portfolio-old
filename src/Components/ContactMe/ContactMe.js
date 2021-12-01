@@ -45,7 +45,7 @@ const ContactMe = () => {
   };
 
   return (
-    <Box sx={{ mt: 20 }}>
+    <Box sx={{ mt: 20 }} id="contact-me">
       <div
         style={{
           backgroundColor: "#ECECEC",

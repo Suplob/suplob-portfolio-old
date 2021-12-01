@@ -18,15 +18,17 @@ const AboutMe = () => {
             alignItems: "center",
             justifyContent: "center",
           }}
+          id="about-me"
         >
           <Grid
             item
             xs={12}
-            md={6}
+            sm={6}
             sx={{
               backgroundColor: "white",
               borderRadius: "20px",
               py: 5,
+              margin: "0 auto",
             }}
           >
             <img src={img} alt="" className="hero-img" />
@@ -120,15 +122,6 @@ const AboutMe = () => {
           </Grid>
         </Grid>
       </Container>
-      <div
-        style={{
-          backgroundColor: "white",
-          clipPath: "polygon(0 30%, 100% 0, 100% 70%, 0 100%)",
-          height: "30vh",
-          marginTop: "10px",
-          paddingBottom: "-30px",
-        }}
-      ></div>
     </div>
   );
 };

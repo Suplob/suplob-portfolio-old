@@ -80,3 +80,32 @@
   background: #ff6f3c;
   color: white;
 }
+
+.modal-buttons {
+  margin-top: 3;
+  display: flex;
+  margin: 70px 0;
+}
+.close-icon {
+  position: absolute;
+  top: 40p;
+  right: 40px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .modal-buttons {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+  }
+  .middle-modal-button {
+    margin: 10px 0;
+  }
+  .modal-info {
+    overflow: scroll;
+    height: 150px;
+  }
+}

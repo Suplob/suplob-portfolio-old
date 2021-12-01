@@ -38,39 +38,46 @@ export default function TemporaryDrawer() {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-        <Link
+        <a className="default-link" href="#hero" style={{ color: "black " }}>
+          <ListItem disablePadding>
+            <ListItemButton>
+              <ListItemText primary="Home" />
+            </ListItemButton>
+          </ListItem>
+        </a>
+        <a
           className="default-link"
-          to={`/allCars`}
+          href="#about-me"
           style={{ color: "black " }}
         >
           <ListItem disablePadding>
             <ListItemButton>
-              <ListItemText primary="All Cars" />
+              <ListItemText primary="About Me" />
             </ListItemButton>
           </ListItem>
-        </Link>
-        <Link
+        </a>
+        <a
           className="default-link"
-          to={`/register`}
+          href="#projects"
           style={{ color: "black " }}
         >
           <ListItem disablePadding>
             <ListItemButton>
-              <ListItemText primary="Register" />
+              <ListItemText primary="My Projects" />
             </ListItemButton>
           </ListItem>
-        </Link>
-        <Link
+        </a>
+        <a
           className="default-link"
-          to={`/login`}
+          href="#contact-me"
           style={{ color: "black " }}
         >
           <ListItem disablePadding>
             <ListItemButton>
-              <ListItemText primary="Login" />
+              <ListItemText primary="Contact Me" />
             </ListItemButton>
           </ListItem>
-        </Link>
+        </a>
       </List>
     </Box>
   );

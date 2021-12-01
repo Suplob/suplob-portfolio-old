@@ -21,7 +21,7 @@ SwiperCore.use([Navigation, Pagination, Mousewheel, Keyboard]);
 
 const style = {
   position: "absolute",
-  height: "85vh",
+  height: "90vh",
   width: "90vw",
   background: "#fff",
   borderRadius: "20px",
@@ -56,8 +56,8 @@ const ProjectCard = (props) => {
 
   return (
     <>
-      <Grid item xs={12} md={6} lg={4} sx={{ my: 5, textAlign: "start" }}>
-        <div class="project-wrapper">
+      <Grid item xs={12} sm={6} md={4} sx={{ my: 5, textAlign: "start" }}>
+        <div class="project-wrapper" style={{ margin: "0 auto" }}>
           <div class="project-card">
             <img src={img1} alt="" />
             <div class="info">
@@ -86,13 +86,7 @@ const ProjectCard = (props) => {
         <Fade in={open}>
           <Box sx={style}>
             <CloseIcon
-              style={{
-                position: "absolute",
-                top: "40px",
-                right: "40px",
-                fontSize: "30px",
-                cursor: "pointer",
-              }}
+              className="close-icon"
               onClick={() => {
                 handleClose();
               }}
@@ -125,7 +119,7 @@ const ProjectCard = (props) => {
                       <img src={img3} alt="" style={{ width: "100%" }} />
                     </SwiperSlide>
                   </Swiper>
-                  <Box sx={{ mt: 3, display: "flex" }}>
+                  <Box className="modal-buttons">
                     <a href={liveSite} target="blank">
                       <div className="button-regular">
                         <div
@@ -136,7 +130,11 @@ const ProjectCard = (props) => {
                         </div>
                       </div>
                     </a>
-                    <a href={codeClient} target="blank">
+                    <a
+                      href={codeClient}
+                      target="blank"
+                      className="middle-modal-button"
+                    >
                       <div
                         className="button-regular"
                         style={{ width: "170px", margin: "0 20px" }}
@@ -171,7 +169,7 @@ const ProjectCard = (props) => {
                   </Box>
                 </>
               </Grid>
-              <Grid item xs={12} lg={6}>
+              <Grid item xs={12} lg={6} className="modal-info">
                 <ul>
                   <li className="poppins-400">{des1}</li>
                   <li className="poppins-400">{des2}</li>

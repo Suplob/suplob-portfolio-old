@@ -1,0 +1,24 @@
+.pointy-bottom {
+  background-color: #155263;
+  margin-top: -1px;
+  height: 40vh;
+  clip-path: polygon(51% 100%, 0 0, 100% 0);
+}
+
+@media only screen and (max-width: 600px) {
+  .pointy-bottom {
+    height: 10vh;
+  }
+  .hero-section {
+    margin-top: -1px;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1281px) {
+  .pointy-bottom {
+    height: 15vh;
+  }
+  .hero-section {
+    margin-top: -1px;
+  }
+}
