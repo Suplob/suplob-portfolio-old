@@ -13,6 +13,12 @@ function App() {
           <Route exact path="/">
             <Home></Home>
           </Route>
+          <Route exact path="/blogs">
+            <h1>Blog Coming Soon</h1>
+          </Route>
+          <Route path="*">
+            <h1>Route not found</h1>
+          </Route>
         </Switch>
       </Router>
     </div>

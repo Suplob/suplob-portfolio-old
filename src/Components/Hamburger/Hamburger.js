@@ -78,6 +78,13 @@ export default function TemporaryDrawer() {
             </ListItemButton>
           </ListItem>
         </a>
+        <Link className="default-link" to="/blogs" style={{ color: "black " }}>
+          <ListItem disablePadding>
+            <ListItemButton>
+              <ListItemText primary="Blogs" />
+            </ListItemButton>
+          </ListItem>
+        </Link>
       </List>
     </Box>
   );

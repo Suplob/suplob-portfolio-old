@@ -5,6 +5,49 @@
   clip-path: polygon(51% 100%, 0 0, 100% 0);
 }
 
+.heading-inside {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  font-size: 3rem;
+  background: linear-gradient(
+    to bottom,
+    #ff6f3c,
+    #ff6f3c 60%,
+    #fff 60%,
+    #fff 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-repeat: no-repeat;
+  transition: background 0.2s ease-out;
+  white-space: nowrap;
+}
+
+.heading-wrapper {
+  position: relative;
+}
+
+.heading-wrapper:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: #ff6f3c;
+  bottom: 9px;
+  transition: all 0.2s ease-out;
+}
+
+.heading-inside:hover {
+  background-position: 0 19px;
+}
+
+.heading-wrapper:hover:before {
+  transform: translateY(15px);
+}
+
 @media only screen and (max-width: 600px) {
   .pointy-bottom {
     height: 10vh;

@@ -38,13 +38,9 @@ const Hero = () => {
             >
               Hello, I'm Suplob Roy
             </Typography>
-            <Typography
-              variant="h4"
-              sx={{ color: "#ff6f3c", pt: 2 }}
-              className="poppins-400"
-            >
-              A Web Developer
-            </Typography>
+            <span className="heading-wrapper">
+              <p className="heading-inside">A Web Developer</p>
+            </span>
             <div className="button-regular-hero" style={{ marginTop: "15px" }}>
               <div className="button-regular-text">Hire Me</div>
             </div>
