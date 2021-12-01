@@ -1,0 +1,140 @@
+.about-me-section {
+  background-color: #ececec;
+  margin-top: -40vh;
+  height: 160vh;
+}
+
+.about-me-section-wrapper {
+  padding-top: 50vh;
+}
+
+.hero-img {
+  width: 50%;
+  border-radius: 50%;
+  border: 2px solid #ff6f3c;
+  padding: 5px;
+}
+
+.skill-bars {
+  padding: 25px 30px;
+  width: 600px;
+  background: #fff;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+.skill-bars .bar {
+  margin: 20px 0;
+}
+.skill-bars .bar:first-child {
+  margin-top: 0px;
+}
+.skill-bars .bar .info {
+  margin-bottom: 5px;
+}
+.skill-bars .bar .info span {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 17px;
+  opacity: 0;
+  animation: showText 0.5s 1s linear forwards;
+}
+@keyframes showText {
+  100% {
+    opacity: 1;
+  }
+}
+.skill-bars .bar .progress-line {
+  height: 10px;
+  width: 100%;
+  background: #f0f0f0;
+  position: relative;
+  transform: scaleX(0);
+  transform-origin: left;
+  border-radius: 10px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05),
+    0 1px rgba(255, 255, 255, 0.8);
+  animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+@keyframes animate {
+  100% {
+    transform: scaleX(1);
+  }
+}
+.bar .progress-line span {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  background: #ff6f3c;
+  animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+.bar .progress-line.html span {
+  width: 90%;
+}
+.bar .progress-line.css span {
+  width: 80%;
+}
+.bar .progress-line.jquery span {
+  width: 85%;
+}
+.bar .progress-line.python span {
+  width: 40%;
+}
+.bar .progress-line.mysql span {
+  width: 75%;
+}
+
+@keyframes showText2 {
+  100% {
+    opacity: 1;
+  }
+}
+a {
+  text-decoration: none;
+}
+
+.socials {
+  margin-top: 20px;
+}
+
+.social {
+  margin-right: 20px;
+  border-radius: 50%;
+  font-size: 20px;
+  padding: 5px 10px;
+}
+
+.linkedin {
+  border: 2px solid #0072b1;
+  color: #0072b1;
+  transition: 300ms ease-in-out;
+}
+
+.linkedin:hover {
+  background-color: #0072b1;
+  color: white;
+}
+
+.github {
+  border: 2px solid #171515;
+  color: #171515;
+  transition: 300ms ease-in-out;
+}
+
+.github:hover {
+  background-color: #171515;
+  color: white;
+}
+
+.mail {
+  border: 2px solid #ea4335;
+  color: #ea4335;
+  transition: 300ms ease-in-out;
+}
+
+.mail:hover {
+  background-color: #ea4335;
+  color: white;
+}

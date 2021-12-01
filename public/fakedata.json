@@ -1,0 +1,47 @@
+[
+  {
+    "name": "Car House",
+    "liveSite": "https://suplob-car-house.netlify.app/",
+    "codeClient": "https://github.com/Suplob/car-house",
+    "codeServer": "https://github.com/Suplob/car-house-server",
+    "img1": "https://i.ibb.co/pfvxXqZ/car-house.png",
+    "img2": "https://i.ibb.co/R6NnY9C/car-house-2.png",
+    "img3": "https://i.ibb.co/5FNDcJ6/car-house-3.png",
+    "des1": "A fully responsive modern website where user can order cars and orders will be stored in database",
+    "des2": "Users can login with google authentication and email password authentication",
+    "des3": "Users has to be logged in to order and view details",
+    "des4": "Users can cancel order",
+    "des5": "Admin can confirm or cancel order from the admin dashboard",
+    "technologies": "ReactJS, React Routing, MongoDB atlas, netlify, heroku, firebase authentication, materialUI, swiperjs, REST API, nodejs, expressjs"
+  },
+  {
+    "name": "Doctors Portal",
+    "liveSite": "https://suplob-doctors-portal.netlify.app/",
+    "codeClient": "https://github.com/Suplob/doctors-portal-client",
+    "codeServer": "https://github.com/Suplob/doctors-portal-server",
+    "img1": "https://i.ibb.co/XSkCvZG/doctors-portal-1.png",
+    "img2": "https://i.ibb.co/2gtYNbz/doctors-portal-2.png",
+    "img3": "https://i.ibb.co/zVbntjC/doctors-portal-3.png",
+    "des1": "A fully responsive modern website where user can get appointment and appointment will be stored in database",
+    "des2": "Users can login with google authentication and email password authentication",
+    "des3": "Users has to be logged in to get appointment and view appointments",
+    "des4": "Users can get appointment on their desired date",
+    "des5": "Admin can confirm or cancel appointment from the admin dashboard",
+    "technologies": "ReactJS, React Routing, MongoDB atlas, netlify, heroku, firebase authentication, materialUI, REST API, nodejs, expressjs"
+  },
+  {
+    "name": "Theme Park",
+    "liveSite": "https://theme-park-bac35.web.app/",
+    "codeClient": "https://github.com/Suplob/themepark-client",
+    "codeServer": "https://github.com/Suplob/themepark-server",
+    "img1": "https://i.ibb.co/41Q1ZrC/themepark.png",
+    "img2": "https://i.ibb.co/dmDDLXq/themepark-2.png",
+    "img3": "https://i.ibb.co/m4Yy066/themepark-3.png",
+    "des1": "A fully responsive modern website where user can order rides and orderes will be stored in database",
+    "des2": "Users can login with google authentication and email password authentication",
+    "des3": "Users has to be logged in to get appointment and view appointments",
+    "des4": "Users can cancel their orders",
+    "des5": "Users can request a order and order will be added in the home page",
+    "technologies": "ReactJS, React Routing, MongoDB atlas, heroku, firebase hosting, firebase authentication, React Bootstrap, REST API, nodejs, expressjs"
+  }
+]
