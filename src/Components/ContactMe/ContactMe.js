@@ -1,16 +1,23 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import "./ContactMe.css";
-import { Container, Box } from "@mui/material";
+import { Container, Box, CircularProgress } from "@mui/material";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 import EmailIcon from "@mui/icons-material/Email";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHubIcon from "@mui/icons-material/GitHub";
+
 import emailjs from "emailjs-com";
 
 const ContactMe = () => {
   const form = useRef();
+  const [success, setSuccess] = useState(null);
+  const [error, setError] = useState(null);
+  const [loading, setLoading] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
+    setLoading(true);
 
     emailjs
       .sendForm(
@@ -21,12 +28,20 @@ const ContactMe = () => {
       )
       .then(
         (result) => {
-          console.log(result.text);
+          if (result.text) {
+            setSuccess(true);
+          }
         },
         (error) => {
-          console.log(error.text);
+          if (error.text) {
+            setError(true);
+          }
         }
-      );
+      )
+      .finally(() => {
+        setLoading(false);
+      });
+    e.target.reset();
   };
 
   return (
@@ -100,21 +115,29 @@ const ContactMe = () => {
                         </div>
                       </div>
                       <div class="row">
-                        <div class="col-md-12 form-group">
+                        <div class="col-md-12 form-group d-flex align-items-center">
                           <input
                             type="submit"
                             value="Send Message"
                             class="btn btn-primary rounded-0 py-2 px-4"
                           />
+                          {loading && <CircularProgress sx={{ ml: 4 }} />}
                           <span class="submitting"></span>
                         </div>
                       </div>
                     </form>
 
-                    <div id="form-message-warning mt-4"></div>
-                    <div id="form-message-success">
-                      Your message was sent, thank you!
-                    </div>
+                    {error && (
+                      <div id="form-message-warning mt-4">
+                        An error has occured please send your message to
+                        parbaroy30@gmail.com
+                      </div>
+                    )}
+                    {success && (
+                      <div id="form-message-success">
+                        Your message was sent, thank you!
+                      </div>
+                    )}
                   </div>
                 </div>
                 <div class="col-md-4">
@@ -136,6 +159,26 @@ const ContactMe = () => {
                         <span class="text" style={{ color: "white" }}>
                           <EmailIcon /> parbaroy30@gmail.com
                         </span>
+                      </li>
+                      <li class="d-flex">
+                        <a
+                          target="blank"
+                          href="https://www.linkedin.com/in/suplob-roy-b790451bb/"
+                          class="text"
+                          style={{ color: "white", textDecoration: "none" }}
+                        >
+                          <LinkedInIcon /> Suplob Roy
+                        </a>
+                      </li>
+                      <li class="d-flex">
+                        <a
+                          target="blank"
+                          href="https://github.com/Suplob"
+                          class="text"
+                          style={{ color: "white", textDecoration: "none" }}
+                        >
+                          <GitHubIcon /> Suplob Roy
+                        </a>
                       </li>
                     </ul>
                   </div>

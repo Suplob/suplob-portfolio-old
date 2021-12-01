@@ -148,11 +148,6 @@ label.error {
   resize: vertical;
 }
 
-#form-message-warning,
-#form-message-success {
-  display: none;
-}
-
 #form-message-warning {
   color: #b90b0b;
 }
