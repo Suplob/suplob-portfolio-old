@@ -30,6 +30,7 @@ const Hero = () => {
             style={{
               textAlign: "start",
             }}
+            data-aos="fade"
           >
             <Typography
               variant="h3"
@@ -42,7 +43,9 @@ const Hero = () => {
               <p className="heading-inside">A Web Developer</p>
             </span>
             <div className="button-regular-hero" style={{ marginTop: "15px" }}>
-              <div className="button-regular-text">Hire Me</div>
+              <a href="/resume.pdf" target="blank" download>
+                <div className="button-regular-text">Hire Me</div>
+              </a>
             </div>
           </div>
         </Container>

@@ -7,7 +7,7 @@ const AboutMe = () => {
   return (
     <div className="about-me-section">
       <Container className="about-me-section-wrapper">
-        <Typography variant="h2" sx={{ mb: 4 }}>
+        <Typography variant="h2" sx={{ mb: 4 }} data-aos="fade-up">
           About <span style={{ color: "#FF6F3C" }}>Me</span>
         </Typography>
         <Grid
@@ -30,6 +30,7 @@ const AboutMe = () => {
               py: 5,
               margin: "0 auto",
             }}
+            data-aos="fade-right"
           >
             <img src={img} alt="" className="hero-img" />
             <div>
@@ -76,7 +77,7 @@ const AboutMe = () => {
               </div>
             </div>
           </Grid>
-          <Grid item xs={12} md={6}>
+          <Grid item xs={12} md={6} data-aos="fade-left">
             <div class="skill-bars">
               <div class="bar">
                 <div class="info">
